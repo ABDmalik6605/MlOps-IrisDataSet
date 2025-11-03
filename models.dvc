@@ -1,0 +1,6 @@
+outs:
+- md5: 314e60c2f000c937cc7a94885a45faca.dir
+  size: 1834145
+  nfiles: 1
+  hash: md5
+  path: models
