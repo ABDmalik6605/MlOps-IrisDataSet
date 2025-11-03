@@ -10,7 +10,7 @@ df = pd.read_csv('iris.csv')
 os.makedirs('models', exist_ok=True)
 os.makedirs('metrics', exist_ok=True)
 Y = df['target']
-X = df.drop('target', axis=1)
+X = df.drop(['target', 'petal length (cm)'], axis=1)
 param = yaml.safe_load(open('params.yaml'))
 x_train, x_test, y_train, y_test = train_test_split(
     X, Y, test_size=param['split']['test_size'],

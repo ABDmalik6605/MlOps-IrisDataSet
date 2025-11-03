@@ -16,8 +16,8 @@ stages:
       size: 2777
     - path: train.py
       hash: md5
-      md5: c59f924f97775effd0f3ff6c92b34a20
-      size: 1021
+      md5: f0451f6cba5097a221b0459c61063da8
+      size: 1044
     params:
       params.yaml:
         split.test_size: 0.2
@@ -26,9 +26,9 @@ stages:
     outs:
     - path: metrics/eval.json
       hash: md5
-      md5: 9a0379eaa11dd7b9e9995a62a5f21656
-      size: 17
+      md5: 987c8a35a630044b24b9ad667403631f
+      size: 32
     - path: models/model.pkl
       hash: md5
-      md5: 53ca96d6a99f8595ad288e63684b835c
-      size: 1834145
+      md5: 35a43c6f8d19110dc1228995966fa05d
+      size: 3254097
