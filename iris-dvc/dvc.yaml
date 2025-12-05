@@ -1,0 +1,20 @@
+stages:
+  prepare:
+    cmd: python prepare.py
+    outs:
+      - data/iris.csv
+
+  train:
+    cmd: python train.py
+    deps:
+      - data/iris.csv
+      - train.py
+    params:
+      - split.test_size
+      - train.n_estimators
+      - train.random_state
+    outs:
+      - model/model.pkl
+    metrics:
+      - metrics/eval.json:
+          cache: false
